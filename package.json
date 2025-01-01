@@ -50,7 +50,7 @@
     "@kurone-kito/commitlint-config": "^0.16.1",
     "@kurone-kito/cspell-config": "^0.16.1",
     "@kurone-kito/eslint-config-base": "^0.16.1",
-    "@kurone-kito/lint-staged-config": "^0.16.1",
+    "@kurone-kito/lint-staged-config": "^0.17.2",
     "@kurone-kito/prettier-config": "^0.16.1",
     "@kurone-kito/typescript-config": "^0.16.1",
     "@typescript-eslint/parser": "^8.5.0",
