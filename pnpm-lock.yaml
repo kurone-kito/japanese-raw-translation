@@ -27,8 +27,8 @@ importers:
         specifier: ^0.16.1
         version: 0.16.1(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
       '@kurone-kito/lint-staged-config':
-        specifier: ^0.16.1
-        version: 0.16.1(cspell@8.14.2)(eslint-formatter-codeframe@7.32.1)(eslint@9.10.0(jiti@1.21.6))(lint-staged@15.2.10)(prettier@3.3.3)
+        specifier: ^0.17.2
+        version: 0.17.2(cspell@8.14.2)(eslint-formatter-codeframe@7.32.1)(eslint@9.10.0(jiti@1.21.6))(lint-staged@15.2.10)(prettier@3.3.3)
       '@kurone-kito/prettier-config':
         specifier: ^0.16.1
         version: 0.16.1
@@ -710,15 +710,26 @@ packages:
     peerDependencies:
       eslint: '>=9.x.x'
 
-  '@kurone-kito/lint-staged-config@0.16.1':
-    resolution: {integrity: sha512-WPqZJuwvZCPB9kkjJ4vvL21s6HyE9ovwx2VhFM9rba92o9Rwqh4qhtuy+arYnugi1Se6Gg3Vqb+y4QtnUjpkcw==}
+  '@kurone-kito/lint-staged-config@0.17.2':
+    resolution: {integrity: sha512-j+IBw0wgNAS3CFZXsKNhAdT/tY2bKwgtVaLgOujb3vjaK8NCewwfHF/TgEfGlHtPkgon+kQoHxr+8FGxZCVd/g==}
     engines: {node: ^18.20 || ^20.10 || >=22}
     peerDependencies:
       cspell: '>=5.7.x'
-      eslint: '>=8.x.x'
+      eslint: '>=9.x.x'
       eslint-formatter-codeframe: '*'
       lint-staged: '>=12.1.0'
       prettier: '>=3.0.x'
+    peerDependenciesMeta:
+      cspell:
+        optional: true
+      eslint:
+        optional: true
+      eslint-formatter-codeframe:
+        optional: true
+      lint-staged:
+        optional: true
+      prettier:
+        optional: true
 
   '@kurone-kito/prettier-config@0.16.1':
     resolution: {integrity: sha512-m3JDtX2oHaufx2jhhXoVO07Zu3pLVgKl26P+HcE4JKaq3eFnKjhwDXEvvKgnpkqG6xRYC6K+QjL0IkwgGL9w8A==}
@@ -1762,6 +1773,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   eslint@9.10.0:
@@ -3941,8 +3953,8 @@ snapshots:
       - supports-color
       - typescript
 
-  '@kurone-kito/lint-staged-config@0.16.1(cspell@8.14.2)(eslint-formatter-codeframe@7.32.1)(eslint@9.10.0(jiti@1.21.6))(lint-staged@15.2.10)(prettier@3.3.3)':
-    dependencies:
+  '@kurone-kito/lint-staged-config@0.17.2(cspell@8.14.2)(eslint-formatter-codeframe@7.32.1)(eslint@9.10.0(jiti@1.21.6))(lint-staged@15.2.10)(prettier@3.3.3)':
+    optionalDependencies:
       cspell: 8.14.2
       eslint: 9.10.0(jiti@1.21.6)
       eslint-formatter-codeframe: 7.32.1
